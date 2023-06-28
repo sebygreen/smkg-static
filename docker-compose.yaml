@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+    smkg-static:
+        image: nginx:latest
+        container_name: smkg-static
+        restart: unless-stopped
+        ports:
+            - 443:443
+        volumes:
+            - ./:/usr/share/nginx/html
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.smkg-static.rule=Host(`smkg.me`)"
+            - "traefik.http.routers.smkg-static.entrypoints=websecure"
+            - "traefik.http.services.smkg-static.loadbalancer.server.port=443"
