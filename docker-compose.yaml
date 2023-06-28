@@ -12,6 +12,7 @@ services:
             - "traefik.enable=true"
             - "traefik.http.routers.smkg-static.rule=Host(`smkg.me`)"
             - "traefik.http.routers.smkg-static.entrypoints=websecure"
+            - "traefik.http.services.smkg-static.loadbalancer.server.port=80"
         networks:
             - traefik_web
 
