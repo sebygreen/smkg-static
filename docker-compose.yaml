@@ -1,5 +1,6 @@
 version: "3"
 
+# services
 services:
     smkg-static:
         image: nginx:latest
@@ -14,3 +15,10 @@ services:
             - "traefik.http.routers.smkg-static.rule=Host(`smkg.me`)"
             - "traefik.http.routers.smkg-static.entrypoints=websecure"
             - "traefik.http.services.smkg-static.loadbalancer.server.port=443"
+        networks:
+            - traefik_bridge
+
+# networks
+networks:
+    traefik_bridge:
+        external: true
