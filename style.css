@@ -92,10 +92,19 @@ body {
     border-radius: 10px;
     color: white;
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 480px) {
+    #hero {
+        height: 100lvh;
+    }
+
+    #hero .content-wrapper {
+        height: 100svh;
+    }
+
     #hero article {
         text-align: center;
     }
