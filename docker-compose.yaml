@@ -11,6 +11,7 @@ services:
             - "traefik.enable=true"
             - "traefik.http.routers.smkg-static.rule=Host(`smkg.me`)"
             - "traefik.http.routers.smkg-static.entrypoints=websecure"
+            - "traefik.http.routers.smkg-static.tls.certresolver=letsencrypt"
         networks:
             - traefik_proxy
 
