@@ -1,116 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/1be8c08462.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
-
-        <header>
-            <div class="content_container">
-                <img src="img/logo_white.png" alt="">
-                <nav id="socials">
-                    <a href="https://www.linkedin.com/in/sebastien-green-433124194/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="mailto:sebygreen@gmail.com"><i class="fa-solid fa-envelope-open-text"></i></a>
-                </nav>
-            </div>
-        </header>
-
         <section id="hero">
-            <div class="content_container">
-                <div id="hero_flexbox">
-                    <img src="img/me.jpg" alt="Portrait">
-                    <div>
-                        <h1>Sebastien Green</h1>
-                        <h2><span>Also know as:</span> ottomon<span>, </span>Dyrsin<span> or simply </span>Seb</h2>
-                        <h3>3<span><sup>rd</sup></span> Year Web Designer <span>&</span> Developer<span>,</span> Amateur Music Producer<span>,</span> and Photographer<span>.</span></h3>
-                    </div>
-                </div>
+            <div class="content-wrapper">
+                <a class="button blur" href="mailto:sebygreen@gmail.com">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                        />
+                        <path
+                            d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                        />
+                    </svg>
+                    <p>Contact</p>
+                </a>
+                <article>
+                    <img
+                        src="img/logo_white_text.png"
+                        alt="My logo with text"
+                    />
+                    <h2>
+                        <span>Also know as:</span> ottomon<span>, </span
+                        >Dyrsin<span> or simply </span>Seb
+                    </h2>
+                    <p>
+                        3<span><sup>rd</sup></span> Year Web Designer
+                        <span>&</span> Developer<span>,</span> Amateur Music
+                        Producer<span>,</span> and Photographer<span>.</span>
+                    </p>
+                </article>
             </div>
         </section>
-
-        <section id="about">
-            <div class="content_container">
-                <h2>About Me</h2>
-                <p>I am 21 years old, currently living in France on the border with Switzerland on the outskirts of Geneva. I was born in Kent, below London. Briefly, my passions are computers & software, video games, photography and music production.</br></br>I was first living in Portugal between 2002 and 2009, placed in the <a href="">International School of the Algarve</a> (now owned by <span>Nobel</span>). In 2010, me and my family moved to France, where I attended the <a href="">International School of Geneva</a>.</br></br>Since the summer of 2019, after I received my <span>IB</span>, I started my 1<sup>st</sup> year at <a href="">SAE Institute</a> learning all about <span>web development</span>,<span>principles of design</span> and <span>server-side maintenance</span>, to name a few things.</p>
-            </div>
-        </section>
-
         <section id="work">
-            <div class="content_container">
+            <div class="content-wrapper">
                 <h2>My Work</h2>
-                <div class="work_flexbox">
-                    <div class="work_item">
+                <div class="flexbox">
+                    <article>
                         <h3>Programming <span>&</span> Design</h3>
-                        <p class="work_sub_title">Most of my projects are on Github and Codepen. Some are front-end static HTML websites, with a touch of preliminary jQuery and PHP scripting included in the development, whilst my more substantial projects are not currently public, but will be soon.</p>
-                        <div class="work_item_links">
-                            <div class="work_item_links_buttons">
-                                <a class="work_button" href="https://github.com/sebygreen">
-                                    <i class="fa-brands fa-github"></i>
-                                    <p><span>@</span>sebygreen3033</p>
-                                </a>
-                                <a class="work_button" href="https://codepen.io/sebygreen3033/">
-                                    <i class="fa-brands fa-codepen"></i>
-                                    <p><span>@</span>sebygreen3033</p>
-                                </a>
-                            </div>
-                            <div class="work_item_links_text">
-                                <p>I use Github to host my bigger development projects.</p>
-                                <p>Small apps and tools can be found on Codepen.</p>
-                            </div>
+                        <p class="description">
+                            Most of my projects are on Github and Codepen. Some
+                            are front-end static HTML websites, with a touch of
+                            preliminary jQuery and PHP scripting included in the
+                            development, whilst my more substantial projects are
+                            not currently public, but will be soon.
+                        </p>
+                        <div class="links">
+                            <a
+                                class="button"
+                                href="https://github.com/sebygreen"
+                            >
+                                <svg
+                                    role="img"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                >
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                                    />
+                                </svg>
+                                <p>Github</p>
+                            </a>
+                            <a
+                                class="button"
+                                href="https://codepen.io/sebygreen3033/"
+                            >
+                                <svg
+                                    role="img"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                >
+                                    <title>CodePen</title>
+                                    <path
+                                        d="M18.144 13.067v-2.134L16.55 12zm1.276 1.194a.628.628 0 01-.006.083l-.005.028-.011.053-.01.031c-.005.016-.01.031-.017.047l-.014.03a.78.78 0 01-.021.043l-.019.03a.57.57 0 01-.08.1l-.026.025a.602.602 0 01-.036.03l-.029.022-.01.008-6.782 4.522a.637.637 0 01-.708 0L4.864 14.79l-.01-.008a.599.599 0 01-.065-.052l-.026-.025-.032-.034-.021-.028a.588.588 0 01-.067-.11l-.014-.031a.644.644 0 01-.017-.047l-.01-.03c-.004-.018-.008-.036-.01-.054l-.006-.028a.628.628 0 01-.006-.083V9.739c0-.028.002-.055.006-.083l.005-.027.011-.054.01-.03a.574.574 0 01.12-.217l.031-.034.026-.025a.62.62 0 01.065-.052l.01-.008 6.782-4.521a.638.638 0 01.708 0l6.782 4.521.01.008.03.022.035.03c.01.008.017.016.026.025a.545.545 0 01.08.1l.019.03a.633.633 0 01.021.043l.014.03c.007.016.012.032.017.047l.01.031c.004.018.008.036.01.054l.006.027a.619.619 0 01.006.083zM12 0C5.373 0 0 5.372 0 12 0 18.627 5.373 24 12 24c6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12m0 10.492L9.745 12 12 13.51 14.255 12zm.638 4.124v2.975l4.996-3.33-2.232-1.493zm-6.272-.356l4.996 3.33v-2.974l-2.764-1.849zm11.268-4.52l-4.996-3.33v2.974l2.764 1.85zm-6.272-.356V6.41L6.366 9.74l2.232 1.493zm-5.506 1.549v2.134L7.45 12Z"
+                                    />
+                                </svg>
+                                <p>CodePen</p>
+                            </a>
                         </div>
-                    </div>
-                    <div class="work_item" style="margin: 0 0 0 15px;">
+                    </article>
+                    <article>
                         <h3>Music Production</h3>
-                        <p class="work_sub_title">I've been making music for the past few years, and it has become a fond passion of mind. All my songs are on my Soundcloud profile.</p>
-                        <div class="work_item_links">
-                            <div class="work_item_links_buttons">
-                                <a class="work_button" href="https://soundcloud.com/ottomon">
-                                    <i class="fa-brands fa-soundcloud"></i>
-                                    <p><span>@</span>ottomon</p>
-                                </a>
-                            </div>
-                            <div class="work_item_links_text">
-                                <p>I mainly post small snippets and demos of songs I produce.</p>
-                            </div>
+                        <p class="description">
+                            I've been making music for the past few years, and
+                            it has become a fond passion of mind. All my songs
+                            are on my Soundcloud profile.
+                        </p>
+                        <div class="links">
+                            <a
+                                class="button"
+                                href="https://soundcloud.com/ottomon"
+                            >
+                                <svg
+                                    role="img"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                >
+                                    <title>SoundCloud</title>
+                                    <path
+                                        d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c0 .055.045.094.09.094s.089-.045.104-.104l.21-1.319-.21-1.334c0-.061-.044-.09-.09-.09m1.83-1.229c-.061 0-.12.045-.12.104l-.21 2.563.225 2.458c0 .06.045.12.119.12.061 0 .105-.061.121-.12l.254-2.474-.254-2.548c-.016-.06-.061-.12-.121-.12m.945-.089c-.075 0-.135.06-.15.135l-.193 2.64.21 2.544c.016.077.075.138.149.138.075 0 .135-.061.15-.15l.24-2.532-.24-2.623c0-.075-.06-.135-.135-.135l-.031-.017zm1.155.36c-.005-.09-.075-.149-.159-.149-.09 0-.158.06-.164.149l-.217 2.43.2 2.563c0 .09.075.157.159.157.074 0 .148-.068.148-.158l.227-2.563-.227-2.444.033.015zm.809-1.709c-.101 0-.18.09-.18.181l-.21 3.957.187 2.563c0 .09.08.164.18.164.094 0 .174-.09.18-.18l.209-2.563-.209-3.972c-.008-.104-.088-.18-.18-.18m.959-.914c-.105 0-.195.09-.203.194l-.18 4.872.165 2.548c0 .12.09.209.195.209.104 0 .194-.089.21-.209l.193-2.548-.192-4.856c-.016-.12-.105-.21-.21-.21m.989-.449c-.121 0-.211.089-.225.209l-.165 5.275.165 2.52c.014.119.104.225.225.225.119 0 .225-.105.225-.225l.195-2.52-.196-5.275c0-.12-.105-.225-.225-.225m1.245.045c0-.135-.105-.24-.24-.24-.119 0-.24.105-.24.24l-.149 5.441.149 2.503c.016.135.121.24.256.24s.24-.105.24-.24l.164-2.503-.164-5.456-.016.015zm.749-.134c-.135 0-.255.119-.255.254l-.15 5.322.15 2.473c0 .15.12.255.255.255s.255-.12.255-.27l.15-2.474-.165-5.307c0-.148-.12-.27-.271-.27m1.005.166c-.164 0-.284.135-.284.285l-.103 5.143.135 2.474c0 .149.119.277.284.277.149 0 .271-.12.284-.285l.121-2.443-.135-5.112c-.012-.164-.135-.285-.285-.285m1.184-.945c-.045-.029-.105-.044-.165-.044s-.119.015-.165.044c-.09.054-.149.15-.149.255v.061l-.104 6.048.115 2.449v.008c.008.06.03.135.074.18.058.061.142.104.234.104.08 0 .158-.044.209-.09.058-.06.091-.135.091-.225l.015-.24.117-2.203-.135-6.086c0-.104-.061-.193-.135-.239l-.002-.022zm1.006-.547c-.045-.045-.09-.061-.15-.061-.074 0-.149.016-.209.061-.075.061-.119.15-.119.24v.029l-.137 6.609.076 1.215.061 1.185c0 .164.148.314.328.314.181 0 .33-.15.33-.329l.15-2.414-.15-6.637c0-.12-.074-.221-.165-.277m8.934 3.777c-.405 0-.795.086-1.139.232-.24-2.654-2.46-4.736-5.188-4.736-.659 0-1.305.135-1.889.359-.225.09-.27.18-.285.359v9.368c.016.18.15.33.33.345h8.185C22.681 17.218 24 15.914 24 14.28s-1.319-2.952-2.938-2.952"
+                                    />
+                                </svg>
+                                <p>Soundcloud</p>
+                            </a>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
-
         <section id="documents">
-            <div class="content_container">
+            <div class="content-wrapper">
                 <h2>Documents</h2>
-                <p id="documents_subtitle">Below are links to various documents pertaining to potential work experience.</p>
-                <div id="document_links">
-                    <a href="files/CV.pdf">
-                        <i class="fa-solid fa-file-pdf"></i>
-                        <p>CV<span>.</span>pdf</p>
+                <p class="description">
+                    Below are links to various documents pertaining to potential
+                    work experience.
+                </p>
+                <div class="links">
+                    <a class="button" href="files/CV.pdf">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+                            <path
+                                d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5H5.625z"
+                            />
+                            <path
+                                d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z"
+                            />
+                        </svg>
+                        <p>Curriculum Vitae<span>.</span>pdf</p>
                     </a>
                 </div>
             </div>
         </section>
-
         <footer>
-            <div class="content_container">
-                <div id="footer_left">
-                    <img src="img/logo_white_text.png" alt="Logo">
-                    <p><span>2022</span> &copy; Sebastien Green<br>All rights reserved.</p>
-                    <p>Update 23.05.2022 1.1</p>
-                </div>
-                <div id="footer_right">
-                    <a href="https://www.linkedin.com/in/sebastien-green-433124194/"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
-                    <a href="mailto:sebastien@smkg.me"><i class="fa-solid fa-envelope-open-text"></i>sebastien@smkg.me</a>
-                </div>
+            <div class="content-wrapper">
+                <p>
+                    <span>2023</span> &copy; Sebastien Green. All rights
+                    reserved.
+                </p>
+                <p>Update 01.07.2023 1.2</p>
             </div>
         </footer>
-
     </body>
-
 </html>

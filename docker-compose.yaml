@@ -1,6 +1,5 @@
 version: "3"
 
-# services
 services:
     nginx:
         image: nginx:latest
@@ -8,17 +7,14 @@ services:
         restart: unless-stopped
         volumes:
             - .:/usr/share/nginx/html
-        ports:
-            - "80:3000"
         labels:
             - "traefik.enable=true"
             - "traefik.http.routers.smkg-static.rule=Host(`smkg.me`)"
             - "traefik.http.routers.smkg-static.entrypoints=websecure"
-            - "traefik.http.services.smkg-static.loadbalancer.server.port=3000"
         networks:
-            - traefik_web
+            - traefik_proxy
 
 # networks
 networks:
-    traefik_web:
+    traefik_proxy:
         external: true
