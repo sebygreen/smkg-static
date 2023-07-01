@@ -66,14 +66,15 @@ body {
 /*hero*/
 #hero {
     position: relative;
-    height: 100lvh;
+    height: 80lvh;
+    max-height: min-content;
     background-image: url("/img/purple.png");
     background-size: cover;
 }
 
 #hero .content-wrapper {
     position: relative;
-    height: 100svh;
+    height: 80svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,12 +95,26 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+@media (max-width: 480px) {
+    #hero article {
+        text-align: center;
+    }
+}
+
 #hero article img {
     height: 60px;
 }
 
+#hero article h2 {
+    margin: 15px 0 0 0;
+}
+
 #hero article h2 span {
     opacity: 0.5;
+}
+
+#hero article p {
+    margin: 15px 0 0 0;
 }
 
 #hero article p span,
@@ -112,10 +127,17 @@ body {
     color: white;
 }
 
-#work .flexbox {
+#work .grid {
     margin: 15px 0 0 0;
-    display: flex;
+    display: grid;
     gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+    #work .grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 #work article h3 {
