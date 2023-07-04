@@ -18,7 +18,7 @@
 
 /*styles*/
 body {
-    background-color: rgba(20, 20, 40, 1);
+    background-color: rgb(15, 3, 41);
     font-family: "Satoshi";
 }
 
@@ -55,12 +55,13 @@ body {
 }
 
 .button:hover {
-    color: rgba(20, 20, 40, 1);
+    color: rgba(15, 3, 41, 1);
     background-color: rgba(255, 255, 255, 0.8);
 }
 
 .blur {
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 
 /*hero*/
@@ -186,7 +187,7 @@ body {
 /*footer*/
 footer {
     color: white;
-    background-color: rgba(40, 40, 60, 1);
+    background-color: rgba(25, 13, 51, 1);
 }
 
 footer p {
