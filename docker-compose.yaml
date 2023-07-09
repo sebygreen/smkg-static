@@ -1,5 +1,4 @@
 version: "3"
-
 services:
     nginx:
         image: nginx:latest
@@ -14,8 +13,6 @@ services:
             - "traefik.http.routers.smkg-static.tls.certresolver=letsencrypt"
         networks:
             - traefik_proxy
-
-# networks
 networks:
     traefik_proxy:
         external: true

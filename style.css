@@ -69,7 +69,7 @@ body {
     position: relative;
     height: 80lvh;
     max-height: min-content;
-    background-image: url("/img/purple.png");
+    background-image: url("/images/purple.webp");
     background-size: cover;
 }
 
