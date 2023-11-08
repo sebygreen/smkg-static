@@ -1,8 +1,7 @@
 /*satoshi*/
 @font-face {
     font-family: "Satoshi";
-    src: url("../fonts/Satoshi.woff2") format("woff2"),
-        url("../fonts/Satoshi.woff") format("woff"),
+    src: url("../fonts/Satoshi.woff2") format("woff2"), url("../fonts/Satoshi.woff") format("woff"),
         url("../fonts/Satoshi.ttf") format("truetype");
     font-weight: 300 900;
     font-display: swap;
@@ -30,23 +29,26 @@ body {
 
 /*button*/
 .button {
-    padding: 10px;
+    padding: 8px 10px;
     display: flex;
-    gap: 10px;
-    border-radius: 5px;
+    align-items: center;
+    gap: 15px;
+    border-radius: 50px;
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
     background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: inset -1px 1px 2px -1px rgba(255, 255, 255, 0.1);
     transition: 200ms;
 }
 
 .button svg {
-    height: 22px;
+    height: 16px;
 }
 
 .button p {
     font-size: 16px;
     font-weight: bold;
+    line-height: 18px;
 }
 
 .button p span {
@@ -89,6 +91,7 @@ body {
 }
 
 #hero article {
+    width: fit-content;
     padding: 30px;
     border-radius: 10px;
     color: white;
@@ -107,7 +110,7 @@ body {
     }
 
     #hero article {
-        text-align: center;
+        width: 100%;
     }
 }
 
@@ -117,18 +120,21 @@ body {
 
 #hero article h2 {
     margin: 15px 0 0 0;
+    font-weight: normal;
 }
 
 #hero article h2 span {
     opacity: 0.5;
+    font-weight: bold;
 }
 
-#hero article p {
+#hero article ul {
     margin: 15px 0 0 0;
+    list-style: none;
 }
 
-#hero article p span,
-#hero article p sup {
+#hero article ul li span,
+#hero article ul li sup {
     opacity: 0.5;
 }
 

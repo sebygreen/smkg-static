@@ -1,11 +1,10 @@
-version: "3"
 services:
-    nginx:
+    smkg-static:
         image: nginx:latest
-        container_name: nginx
+        container_name: smkg-static
         restart: unless-stopped
         volumes:
-            - .:/usr/share/nginx/html
+            - ./html:/usr/share/nginx/html
         labels:
             - "traefik.enable=true"
             - "traefik.http.routers.smkg-static.rule=Host(`smkg.me`)"
